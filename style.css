@@ -191,7 +191,7 @@ ul {
 .filter {
   padding-top: 15px;
   padding-right: 20px;
-  grid-area: 1 / 1 / 4;
+  grid-area: 1 / 1 / span 5;
   display: block;
 }
 .filter-category {
@@ -270,6 +270,15 @@ ul {
 }
 .color-types .brown::before {
   background: brown;
+}
+.size-types,
+.color-types,
+.brand-types,
+.price-types {
+  display: none;
+}
+.show-types {
+  display: block;
 }
 /* product list - grid *************************/
 .product-list {

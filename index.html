@@ -64,9 +64,9 @@
                         <h5 class="borderline">Filter by:</h5>
                         <div>
                             <div class="borderline">
-                                <div class="size-category filter-category ">
+                                <div onclick="toggleSizeText()" class="size-category filter-category ">
                                     <p>Size</p>
-                                    <span>+</span>
+                                    <span id="expand-size">+</span>
                                 </div>
                                 <div class="size-types filter-types-wrapper ">
                                     <div class="filter-types">
@@ -93,9 +93,9 @@
                                 </div>
                             </div>
                             <div class="borderline">
-                                <div class="color-category filter-category">
+                                <div onclick="toggleColorText()" class="color-category filter-category">
                                     <p>Color</p>
-                                    <span>+</span>
+                                    <span id="expand-color">+</span>
                                 </div>
                                 <div class="color-types filter-types-wrapper">
                                     <div class="filter-types">
@@ -130,10 +130,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="brand-category borderline">
-                                <div class="brand-category filter-category">
+                            <div class="borderline">
+                                <div onclick="toggleBrandText()" class="brand-category filter-category">
                                     <p>Brand</p>
-                                    <span>+</span>
+                                    <span id="expand-brand">+</span>
                                 </div>
                                 <div class="brand-types filter-types-wrapper">
                                     <div class="filter-types">
@@ -166,9 +166,9 @@
                                 </div>
                             </div>
                             <div class="borderline">
-                                <div class="price-category filter-category">
+                                <div onclick="togglePriceText()" class="price-category filter-category">
                                     <p>Price</p>
-                                    <span>+</span>
+                                    <span id="expand-price">+</span>
                                 </div>
                                 <div class="price-types filter-types-wrapper">
                                     <div class="filter-types">
