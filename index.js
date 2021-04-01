@@ -30,6 +30,14 @@ function togglePriceText(){
         text.innerHTML = "+";
     }
 };
+function pagination(){
+    var currPage = document.getElementById('curr-page');
+    var totalPage = document.getElementById('total-page');
+    if(currPage.innerHTML == "1"){
+        alert('fuck');
+    };
+};
+
 
 $(document).ready(function(){
     $('.search-div').click(function(){

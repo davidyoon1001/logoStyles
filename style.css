@@ -76,6 +76,9 @@ ul {
   margin: 0 15px;
   padding: 20px 0;
 }
+.category li:nth-child(4) {
+  color: red;
+}
 .category a {
   color: black;
 }
@@ -125,6 +128,7 @@ ul {
   color: black;
 }
 .nav-button div:hover a {
+  transition-duration: 0.2s;
   color: gray;
 }
 /* landscape product ***********************************************************/
@@ -193,9 +197,6 @@ ul {
   color: black;
   vertical-align: -7px;
   font-size: 45px !important;
-}
-.product-pagination:nth-child(3) .pagination-arrow {
-  color: gray;
 }
 
 /* product list - filter *************************/
@@ -315,14 +316,12 @@ ul {
   column-gap: 20px;
   row-gap: 20px;
   display: grid;
+  position: relative;
 }
 .product-label {
   font-size: 0.9rem;
-  margin-bottom: 5px;
+  margin: 5px 0px;
   color: black;
-}
-.grid-products img {
-  margin-bottom: 10px;
 }
 .product-price {
   font-size: 0.8rem;
@@ -331,15 +330,38 @@ ul {
   padding: 20px 0px 0px 20px;
   grid-area: 2 / 2 / 2 / 4;
 }
-.grid-products a:hover p {
+.grid-products a:hover .product-label {
   color: gray;
 }
-.grid-products a:active div {
-  opacity: 0.8;
+.grid-products a:active .product-img {
+  opacity: 0.9;
 }
 
 .grid-products-double {
   grid-column: span 2;
+}
+
+.bag-wrapper {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  padding: 15px 0px;
+  background: white;
+  width: 100%;
+  font-size: 0.9rem;
+  bottom: 0;
+}
+.bag-wrapper p {
+  color: gray;
+}
+.bag-wrapper:hover p {
+  color: black;
+}
+.grid-products a:hover .bag-wrapper {
+  opacity: 0.8;
+}
+.product-img-wrapper {
+  position: relative;
 }
 
 /* bottom pagination *************************/
@@ -442,11 +464,9 @@ ul {
   background-color: black;
   color: white;
   grid-area: 2 / 2 / 0 / 0;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
 }
 .email-input-submit:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .footer-email-right .grid {
   align-items: end;
