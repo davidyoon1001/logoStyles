@@ -30,9 +30,10 @@ function togglePriceText(){
         text.innerHTML = "+";
     }
 };
+
 $(document).ready(function(){
-    $('.searchField').focus(function(){
-        $('.search-div').css('border-color','gray');
+    $('.search-div').click(function(){
+        $('.searchField').focus();
     });
     $('.size-category').click(function(){ 
         $('.size-types').toggleClass('show-types');
@@ -45,6 +46,19 @@ $(document).ready(function(){
     });
     $('.price-category').click(function(){
         $('.price-types').toggleClass('show-types');
+    });
+    $('.filter-types').click(function(){
+        $(this).toggleClass('selected-type');
+    });
+    $('.filter').click(function(){
+        if($('.selected-type').length){
+            $('.reset-filters').addClass('reset-filters-active');
+        }else{
+            $('.reset-filters').removeClass('reset-filters-active');
+        };
+    });
+    $('.reset-filters').click(function(){
+        $('.filter-types').removeClass('selected-type');
     });
     
 });
