@@ -52,13 +52,13 @@
                 </div>
                 <div class="responsive-right-nav">
                     <div class="search-icon">
-                        <span class="icon material-icons-sharp">search</span>
+                        <a href="#"><span class="icon material-icons-sharp">search</span></a>
                     </div>
                     <div class="shopping-bag">
-                        <span class="icon material-icons-outlined">shopping_bag</span>
+                        <a href="#"><span class="icon material-icons-outlined">shopping_bag</span></a>
                     </div>
                     <div class="nav-icon-wrapper">
-                        <span class="icon material-icons-sharp">table_rows</span>
+                        <a href="#"><span class="icon material-icons-sharp">table_rows</span></a>
                     </div>
                 </div>
             </div>
@@ -496,33 +496,124 @@
                     
                 </div>
                 <div class="responsive-footer-wrapper">
-                    <div class="wrapper">
-                        <div class="footer-list-wrapper lastlist">  
-                            <h3><a href="#"><span class="footer-list-icon material-icons-outlined">location_on</span>Store Locator</a></h3>
+                    <a href="#" class="lastlist">
+                        <div class="wrapper footer-list-wrapper">
+                                <h3><span class="footer-list-icon material-icons-outlined">location_on</span>Store Locator</h3>
                         </div>
+                    </a>
+                    <a href="#" class="lastlist">
+                        <div class="wrapper footer-list-wrapper">
+                            <h3><span class="footer-list-icon material-icons-outlined">email</span>Get Email</h3>
+                        </div>
+                    </a>
+                    <div onclick="toggleHelpText()" class="wrapper footer-links help-links-selector">
+                        <p>Help</p>
+                        <span id="expand-help">+</span>
                     </div>
-                    <div class="wrapper">
-                        <div class="footer-list-wrapper lastlist">
-                            <h3><a href="#"><span class="footer-list-icon material-icons-outlined">email</span>Get Email</a></h3>
-                        </div>
+                    <div class="footer-link-contents help-links">
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Order Status</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Start A Return</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Return Or Exchange</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Shipping</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Orders + Payments</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>FAQ</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Product Recalls</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Contact Us</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>See All Help Topics</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="wrapper">
-                        <div class="footer-links">
-                            <p>Help</p>
-                            <span >+</span>
-                        </div>
+                    <div onclick="toggleQuickLinksText()" class="wrapper footer-links quick-links-selector">
+                        <p>Quick Links</p>
+                        <span id="expand-link">+</span>
                     </div>
-                    <div class="wrapper">
-                        <div class="footer-links">
-                            <p>Quick Links</p>
-                            <span >+</span>
-                        </div>
+                    <div class="footer-link-contents quick-links">
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Brands</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Careers</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Shop Europe</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Shop Canada</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="wrapper">
-                        <div class="footer-links">
-                            <p>Extras</p>
-                            <span >+</span>
-                        </div>
+                    
+                    <div onclick="toggleExtrasText()" class="wrapper footer-links extra-link-wrapper extra-links-selector">
+                        <p>Extras</p>
+                        <span id="expand-extra">+</span>
+                    </div>
+                    <div class="footer-link-contents extra-links">
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>After Pay</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Community</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Community Cares</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Creative Services</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="wrapper footer-links">
+                                <p>Diversity & Inclusion</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

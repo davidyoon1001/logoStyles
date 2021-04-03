@@ -30,15 +30,30 @@ function togglePriceText(){
         text.innerHTML = "+";
     }
 };
-function pagination(){
-    var currPage = document.getElementById('curr-page');
-    var totalPage = document.getElementById('total-page');
-    if(currPage.innerHTML == "1"){
-        alert('fuck');
-    };
+function toggleHelpText(){
+    var text = document.getElementById('expand-help');
+    if (text.innerHTML == "+"){
+        text.innerHTML = "-";
+    }else{
+        text.innerHTML = "+";
+    }
 };
-
-
+function toggleQuickLinksText(){
+    var text = document.getElementById('expand-link');
+    if (text.innerHTML == "+"){
+        text.innerHTML = "-";
+    }else{
+        text.innerHTML = "+";
+    }
+};
+function toggleExtrasText(){
+    var text = document.getElementById('expand-extra');
+    if (text.innerHTML == "+"){
+        text.innerHTML = "-";
+    }else{
+        text.innerHTML = "+";
+    }
+};
 $(document).ready(function(){
     $('.search-div').click(function(){
         $('.searchField').focus();
@@ -68,6 +83,14 @@ $(document).ready(function(){
     $('.reset-filters').click(function(){
         $('.filter-types').removeClass('selected-type');
     });
-    
+    $('.help-links-selector').click(function(){
+        $('.help-links').toggleClass('show-types');
+    });
+    $('.quick-links-selector').click(function(){
+        $('.quick-links').toggleClass('show-types');
+    });
+    $('.extra-links-selector').click(function(){
+        $('.extra-links').toggleClass('show-types');
+    });
 });
 

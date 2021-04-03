@@ -141,6 +141,12 @@ ul {
 .responsive-right-nav .search-icon {
   display: none;
 }
+.responsive-right-nav a:visited {
+  color: black;
+}
+.responsive-right-nav a:hover {
+  color: gray;
+}
 /* landscape product ***********************************************************/
 .landscape-product {
   padding: 20px 0;
@@ -671,6 +677,9 @@ ul {
   .footer-columns-wrapper {
     padding: 0px;
   }
+  .lastlist:hover {
+    text-decoration: underline;
+  }
   .footer-columns-wrapper .responsive-none {
     display: none;
   }
@@ -678,18 +687,36 @@ ul {
     text-align: center;
     display: block;
   }
+
+  .responsive-footer-wrapper div {
+    cursor: pointer;
+  }
+  .responsive-footer-wrapper div:nth-child(1) .wrapper:hover,
+  div:nth-child(2) .wrapper:hover,
+  div:nth-child(3) .wrapper:hover {
+    color: gray;
+  }
+  .footer-link-contents {
+    font-size: 0.9rem;
+    display: none;
+  }
+
+  .show-types {
+    display: block;
+  }
   .footer-list-wrapper {
     margin-bottom: 0px;
   }
   .responsive-footer-wrapper .wrapper {
-    padding: 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #dddddd;
   }
   .footer-list-wrapper h3 {
     font-size: 0.9rem;
     color: black;
   }
-  .footer-list-wrapper a:visited {
+  .responsive-footer-wrapper a:visited {
     color: black;
   }
   .footer-links {
