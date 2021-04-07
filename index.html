@@ -19,7 +19,7 @@
             <div class="wrapper nav">
                 <div class="brand-logo-wrapper">
                     <a href="#" ><div class="brand-logo">
-                        <p>LOGO STYLES</p>
+                        <p>SKATEBOARD</p>
                     </div></a>
                 </div>
                 <div class="category"> 
@@ -67,7 +67,7 @@
             <div class="landscape-product">
                 <a href="#">
                     <picture>
-                        <img src="landscape-product2.webp" alt="landscape-product">
+                        <img src="landscape-img2.jpeg" alt="landscape-product">
                     </picture>
                 </a>
             </div>
@@ -76,31 +76,39 @@
                     <div class="filter">
                         <h5 class="borderline">Filter by:</h5>
                         <div class="borderline">
-                            <div onclick="toggleSizeText()" class="size-category filter-category ">
-                                <p>Size</p>
-                                <span id="expand-size">+</span>
+                            <div onclick="toggleTypeText()" class="type-category filter-category ">
+                                <p>Type</p>
+                                <span id="expand-type">+</span>
                             </div>
-                            <div class="size-types filter-types-wrapper ">
+                            <div class="type-types filter-types-wrapper ">
                                 <div class="filter-types">
-                                    <p>XXS</p>
+                                    <p>Streetboard</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>XS</p>
+                                    <p>Longboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borderline">
+                            <div onclick="toggleStyleText()" class="style-category filter-category ">
+                                <p>Deck Style</p>
+                                <span id="expand-style">+</span>
+                            </div>
+                            <div class="style-types filter-types-wrapper ">
+                                <div class="filter-types">
+                                    <p>Mini</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>S</p>
+                                    <p>Drop-through</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>M</p>
+                                    <p>Drop-deck</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>L</p>
+                                    <p>Pintail</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>XL</p>
-                                </div>
-                                <div class="filter-types">
-                                    <p>XXL</p>
+                                    <p>Fishtail</p>
                                 </div>
                             </div>
                         </div>
@@ -149,31 +157,25 @@
                             </div>
                             <div class="brand-types filter-types-wrapper">
                                 <div class="filter-types">
-                                    <p>Adidas</p>
+                                    <p>Element</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>Champion</p>
+                                    <p>Enjoi</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>GUCCI</p>
+                                    <p>Globe</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>H&M</p>
+                                    <p>Ktryptonics</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>Nike</p>
+                                    <p>Penny</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>Ralph Lauren</p>
+                                    <p>Retrospec</p>
                                 </div>
                                 <div class="filter-types">
-                                    <p>PRADA</p>
-                                </div>
-                                <div class="filter-types">
-                                    <p>Under Armour</p>
-                                </div>
-                                <div class="filter-types">
-                                    <p>ZARA</p>
+                                    <p>Santa Cruz</p>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +232,7 @@
                 </div>
                 <div class="product-list-wrapper">
                     <div class="product-list">
-                        <div class="grid-products">
+                        <div class="grid-products ">
                             <a href="#">
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
@@ -240,9 +242,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 1</p>
                             </a>
-                            <p class="product-price">$29.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Red stars skateboard</p>
+                                <p class="product-price">$29.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -254,9 +258,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 2</p>
                             </a>
-                            <p class="product-price">$39.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Navy sakteboard</p>
+                                <p class="product-price">$39.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -268,9 +274,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 3</p>
                             </a>
-                            <p class="product-price">$19.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Blue lines board</p>
+                                <p class="product-price">$19.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -282,9 +290,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 4</p>
                             </a>
-                            <p class="product-price">$39.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Color stripes board</p>
+                                <p class="product-price">$39.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -296,9 +306,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 5</p>
                             </a>
-                            <p class="product-price">$24.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Teal board</p>
+                                <p class="product-price">$24.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -310,9 +322,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 6</p>
                             </a>
-                            <p class="product-price">$14.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Blue hedgehog board</p>
+                                <p class="product-price">$14.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -324,9 +338,11 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 7</p>
                             </a>
-                            <p class="product-price">$34.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Yellow letter baord</p>
+                                <p class="product-price">$34.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
@@ -338,65 +354,75 @@
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 8</p>
                             </a>
-                            <p class="product-price">$14.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Prayer board</p>
+                                <p class="product-price">$14.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img8.jpeg" alt="products">
+                                        <img src="img9.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 9</p>
                             </a>
-                            <p class="product-price">$119.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Vintage board</p>
+                                <p class="product-price">$119.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img1.jpeg" alt="products">
+                                        <img src="img10.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 10</p>
                             </a>
-                            <p class="product-price">$79.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Plate board</p>
+                                <p class="product-price">$79.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img1.jpeg" alt="products">
+                                        <img src="img11.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 11</p>
                             </a>
-                            <p class="product-price">$59.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Card board</p>
+                                <p class="product-price">$59.95</p>       
+                            </div>
                         </div>
                         <div class="grid-products">
                             <a href="#">
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img1.jpeg" alt="products">
+                                        <img src="img12.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
                                     </div>
                                 </div>
-                                <p class="product-label">product label 12</p>
                             </a>
-                            <p class="product-price">$44.95</p>       
+                            <div class="product-details">
+                                <p class="product-label">Yellow lines baord</p>
+                                <p class="product-price">$44.95</p>       
+                            </div>
                         </div>
                     </div>
                 </div>

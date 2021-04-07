@@ -1,5 +1,13 @@
-function toggleSizeText(){
-    var text = document.getElementById('expand-size');
+function toggleTypeText(){
+    var text = document.getElementById('expand-type');
+    if (text.innerHTML == "+"){
+        text.innerHTML = "-";
+    }else{
+        text.innerHTML = "+";
+    }
+};
+function toggleStyleText(){
+    var text = document.getElementById('expand-style');
     if (text.innerHTML == "+"){
         text.innerHTML = "-";
     }else{
@@ -58,8 +66,11 @@ $(document).ready(function(){
     $('.search-div').click(function(){
         $('.searchField').focus();
     });
-    $('.size-category').click(function(){ 
-        $('.size-types').toggleClass('show-types');
+    $('.type-category').click(function(){ 
+        $('.type-types').toggleClass('show-types');
+    });
+    $('.style-category').click(function(){
+        $('.style-types').toggleClass('show-types');
     });
     $('.color-category').click(function(){
         $('.color-types').toggleClass('show-types');
