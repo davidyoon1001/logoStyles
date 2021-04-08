@@ -214,6 +214,9 @@ ul {
 .responsive-right-nav {
   display: none;
 }
+.responsive-right-nav a:visited {
+  color: black;
+}
 .responsive-right-nav .search-icon {
   display: none;
 }
@@ -816,6 +819,9 @@ ul {
   .footer-link-contents {
     font-size: 0.9rem;
     display: none;
+  }
+  .footer-link-contents a:visited {
+    color: black;
   }
 
   .show-types {
