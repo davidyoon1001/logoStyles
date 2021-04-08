@@ -62,10 +62,28 @@ function toggleExtrasText(){
         text.innerHTML = "+";
     }
 };
+document.getElementById('side-nav-open').addEventListener('click', openNav);
+function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+    $('#sidenav-overlay').addClass('sidenav-overlay');
+};
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    $('#sidenav-overlay').removeClass('sidenav-overlay');
+};
 $(document).ready(function(){
+    // top nav bar ***************************************************
     $('.search-div').click(function(){
         $('.searchField').focus();
     });
+    // responsive top nav search bar
+    $('.search-icon').focusin(function(){
+        $('.searchField').css("width", "100%").css("padding", "5px").css("border", "1px solid #dddddd");
+    });
+    $('.search-icon').focusout(function(){
+        $('.searchField').css("width", "0").css("padding", "0").css("border", "0px solid white");
+    });
+    // filter ********************************************************
     $('.type-category').click(function(){ 
         $('.type-types').toggleClass('show-types');
     });
@@ -81,6 +99,16 @@ $(document).ready(function(){
     $('.price-category').click(function(){
         $('.price-types').toggleClass('show-types');
     });
+    $('.help-links-selector').click(function(){
+        $('.help-links').toggleClass('show-types');
+    });
+    $('.quick-links-selector').click(function(){
+        $('.quick-links').toggleClass('show-types');
+    });
+    $('.extra-links-selector').click(function(){
+        $('.extra-links').toggleClass('show-types');
+    });
+    //  filter select
     $('.filter-types').click(function(){
         $(this).toggleClass('selected-type');
     });
@@ -91,17 +119,12 @@ $(document).ready(function(){
             $('.reset-filters').removeClass('reset-filters-active');
         };
     });
+    // filter reset
     $('.reset-filters').click(function(){
         $('.filter-types').removeClass('selected-type');
     });
-    $('.help-links-selector').click(function(){
-        $('.help-links').toggleClass('show-types');
-    });
-    $('.quick-links-selector').click(function(){
-        $('.quick-links').toggleClass('show-types');
-    });
-    $('.extra-links-selector').click(function(){
-        $('.extra-links').toggleClass('show-types');
-    });
+    
+    // responsive top nav search bar
+    $('.search-icon')
 });
 

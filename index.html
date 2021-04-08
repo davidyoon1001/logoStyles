@@ -14,7 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div  class="container">
+        <div id="mySidenav" class="sidenav">
+            
+            <div class="sidenav-wrapper">
+                <a href="#" class="sign-in"><span class="icon material-icons-outlined">account_circle</span> Sign In</a>
+                <a href="#" class="categories category">Women</a>
+                <a href="#" class="categories category">Men</a>
+                <a href="#" class="categories category">Kids</a>
+                <a href="#" class="categories category">Trends</a>
+                <a href="#" class="categories sale"><span>Sale</span></a>
+                <a href="#" class="brand-logo"><p>SKATEBOARD</p></a>
+                <a href="#" class="categories">Free Shipping & Returns*</a>
+                <a href="#" class="sign-in"><span class="icon material-icons-outlined">task_alt</span> Rewards</a>
+                <a href="#" class="sign-in"><span class="icon material-icons-outlined">card_giftcard</span> Gift Cards</a>
+            </div>
+            <div onclick="closeNav()" id="sidenav-overlay">
+                <button href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="icon material-icons-outlined">close_fullscreen</span></button>
+            </div>
+        </div>
         <div class="borderline nav-wrapper">
             <div class="wrapper nav">
                 <div class="brand-logo-wrapper">
@@ -28,7 +46,7 @@
                         <li><a href="#" class="category-list">Men</a></li>
                         <li><a href="#" class="category-list">Kids</a></li>
                         <li><a href="#" class="category-list">Trends</a></li>
-                        <li><a href="#" class="category-list">Sale</a></li>
+                        <li><a href="#" class="category-list"><span class="sale">Sale</span></a></li>
                     </ul>
                 </div>
                 <div class="nav-right-wrapper" >
@@ -53,12 +71,13 @@
                 <div class="responsive-right-nav">
                     <div class="search-icon">
                         <a href="#"><span class="icon material-icons-sharp">search</span></a>
+                        <input type="text" class="searchField" >
                     </div>
                     <div class="shopping-bag">
                         <a href="#"><span class="icon material-icons-outlined">shopping_bag</span></a>
                     </div>
                     <div class="nav-icon-wrapper">
-                        <a href="#"><span class="icon material-icons-sharp">table_rows</span></a>
+                        <a href="#"><span id="side-nav-open" class="icon material-icons-sharp">table_rows</span></a>
                     </div>
                 </div>
             </div>
@@ -76,7 +95,7 @@
                     <div class="filter">
                         <h5 class="borderline">Filter by:</h5>
                         <div class="borderline">
-                            <div onclick="toggleTypeText()" class="type-category filter-category ">
+                            <div onclick="toggleTypeText()" id="type-span" class="type-category filter-category ">
                                 <p>Type</p>
                                 <span id="expand-type">+</span>
                             </div>
