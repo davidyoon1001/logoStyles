@@ -1,4 +1,5 @@
 # Skateboard
+[Check the project online!](https://davidyoon1001.github.io/skateboard/)
 ---
 #### Features
 * Top fixed navigation bar
