@@ -1,4 +1,4 @@
-# logoStyles
+# skateboard
 ---
 #### Features
 * top fixed navigation bar
