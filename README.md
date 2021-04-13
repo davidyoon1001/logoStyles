@@ -1,11 +1,11 @@
-# skateboard
+# Skateboard
 ---
 #### Features
-* top fixed navigation bar
-* grid layer of product list
-* filters
-* responsive design
-* responsive side nav bar 
+* Top fixed navigation bar
+* Grid layer of product list
+* Filters
+* Responsive design
+* Responsive side nav bar 
 
 ---
 
