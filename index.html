@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>David | Responsive Website Design</title>
-    
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="ress.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div  class="container">
+    <div class="container">
         <div id="mySidenav" class="sidenav">
-            
+
             <div class="sidenav-wrapper">
                 <a href="#" class="sign-in"><span class="icon material-icons-outlined">account_circle</span> Sign In</a>
-                <a href="#" class="categories category">Women</a>
-                <a href="#" class="categories category">Men</a>
+                <a href="#" class="categories category">Decks</a>
+                <a href="#" class="categories category">Wheels</a>
                 <a href="#" class="categories category">Kids</a>
                 <a href="#" class="categories category">Trends</a>
                 <a href="#" class="categories sale"><span>Sale</span></a>
-                <a href="#" class="brand-logo"><p>SKATEBOARD</p></a>
+                <a href="#" class="brand-logo">
+                    <p>SKATEBOARD</p>
+                </a>
                 <a href="#" class="categories">Free Shipping & Returns*</a>
                 <a href="#" class="sign-in"><span class="icon material-icons-outlined">task_alt</span> Rewards</a>
-                <a href="#" class="sign-in"><span class="icon material-icons-outlined">card_giftcard</span> Gift Cards</a>
+                <a href="#" class="sign-in"><span class="icon material-icons-outlined">card_giftcard</span> Gift
+                    Cards</a>
             </div>
             <div onclick="closeNav()" id="sidenav-overlay">
-                <button href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="icon material-icons-outlined">close_fullscreen</span></button>
+                <button href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span
+                        class="icon material-icons-outlined">close_fullscreen</span></button>
             </div>
         </div>
         <div class="borderline nav-wrapper">
             <div class="wrapper nav">
                 <div class="brand-logo-wrapper">
-                    <a href="#" ><div class="brand-logo">
-                        <p>SKATEBOARD</p>
-                    </div></a>
+                    <a href="#">
+                        <div class="brand-logo">
+                            <p>SKATEBOARD</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="category"> 
+                <div class="category">
                     <ul>
-                        <li><a href="#" class="category-list">Women</a></li>
-                        <li><a href="#" class="category-list">Men</a></li>
+                        <li><a href="#" class="category-list">Decks</a></li>
+                        <li><a href="#" class="category-list">Wheels</a></li>
                         <li><a href="#" class="category-list">Kids</a></li>
                         <li><a href="#" class="category-list">Trends</a></li>
                         <li><a href="#" class="category-list"><span class="sale">Sale</span></a></li>
                     </ul>
                 </div>
-                <div class="nav-right-wrapper" >
+                <div class="nav-right-wrapper">
                     <div class="search-div">
                         <form>
                             <span class="icon material-icons">search</span>
@@ -58,7 +66,8 @@
                     </div>
                     <div class="nav-button">
                         <div>
-                            <a href="#"><span class="icon material-icons-outlined">shopping_bag</span>(0)</a>
+                            <a href="#"><span class="icon material-icons-outlined">shopping_bag</span>(<span
+                                    class="bag-init">0</span>)</a>
                         </div>
                     </div>
                     <div class="nav-button">
@@ -66,15 +75,16 @@
                             <a href="#"><span class="icon material-icons-outlined">account_circle</span> Sign In</a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="responsive-right-nav">
                     <div class="search-icon">
                         <a href="#"><span class="icon material-icons-sharp">search</span></a>
-                        <input type="text" class="searchField" >
+                        <input type="text" class="searchField">
                     </div>
                     <div class="shopping-bag">
-                        <a href="#"><span class="icon material-icons-outlined">shopping_bag</span></a>
+                        <a href="#"><span class="icon material-icons-outlined">shopping_bag</span>(<span
+                                class="bag-init">0</span>)</a>
                     </div>
                     <div class="nav-icon-wrapper">
                         <a href="#"><span id="side-nav-open" class="icon material-icons-sharp">table_rows</span></a>
@@ -86,7 +96,7 @@
             <div class="landscape-product">
                 <a href="#">
                     <picture>
-                        <img src="landscape-img.png" alt="landscape-img">
+                        <img src="image/landscape-img.png" alt="landscape-img">
                     </picture>
                 </a>
             </div>
@@ -244,18 +254,22 @@
                         </select>
                     </div>
                     <ul class="product-pagination">
-                        <a><li><span class="pagination-arrow disabled material-icons-round">navigate_before</span></li></a>
+                        <a>
+                            <li><span class="pagination-arrow disabled material-icons-round">navigate_before</span></li>
+                        </a>
                         <li>1 / 48</li>
-                        <a href="#"><li><span class="pagination-arrow material-icons-round">navigate_next</span></li></a>
+                        <a href="#">
+                            <li><span class="pagination-arrow material-icons-round">navigate_next</span></li>
+                        </a>
                     </ul>
                 </div>
                 <div class="product-list-wrapper">
                     <div class="product-list">
                         <div class="grid-products ">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img1.jpeg" alt="products">
+                                        <img src="image/img1.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -264,14 +278,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Red stars skateboard</p>
-                                <p class="product-price">$29.95</p>       
+                                <p class="product-price">$29.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img2.jpeg" alt="products">
+                                        <img src="image/img2.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -280,14 +294,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Navy sakteboard</p>
-                                <p class="product-price">$39.95</p>       
+                                <p class="product-price">$39.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img3.jpeg" alt="products">
+                                        <img src="image/img3.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -296,14 +310,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Blue lines board</p>
-                                <p class="product-price">$19.95</p>       
+                                <p class="product-price">$19.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img4.jpeg" alt="products">
+                                        <img src="image/img4.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -312,14 +326,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Color stripes board</p>
-                                <p class="product-price">$39.95</p>       
+                                <p class="product-price">$39.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img5.jpeg" alt="products">
+                                        <img src="image/img5.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -328,14 +342,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Teal board</p>
-                                <p class="product-price">$24.95</p>       
+                                <p class="product-price">$24.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img6.jpeg" alt="products">
+                                        <img src="image/img6.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -344,14 +358,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Blue hedgehog board</p>
-                                <p class="product-price">$14.95</p>       
+                                <p class="product-price">$14.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img7.jpeg" alt="products">
+                                        <img src="image/img7.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -360,14 +374,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Yellow letter baord</p>
-                                <p class="product-price">$34.95</p>       
+                                <p class="product-price">$34.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img8.jpeg" alt="products">
+                                        <img src="image/img8.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -376,14 +390,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Prayer board</p>
-                                <p class="product-price">$14.95</p>       
+                                <p class="product-price">$14.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img9.jpeg" alt="products">
+                                        <img src="image/img9.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -392,14 +406,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Vintage board</p>
-                                <p class="product-price">$119.95</p>       
+                                <p class="product-price">$119.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img10.jpeg" alt="products">
+                                        <img src="image/img10.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -408,14 +422,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Plate board</p>
-                                <p class="product-price">$79.95</p>       
+                                <p class="product-price">$79.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img11.jpeg" alt="products">
+                                        <img src="image/img11.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -424,14 +438,14 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Card board</p>
-                                <p class="product-price">$59.95</p>       
+                                <p class="product-price">$59.95</p>
                             </div>
                         </div>
                         <div class="grid-products">
-                            <a href="#">
+                            <a>
                                 <div class="product-img-wrapper">
                                     <div class="product-img">
-                                        <img src="img12.jpeg" alt="products">
+                                        <img src="image/img12.jpeg" alt="products">
                                     </div>
                                     <div class="bag-wrapper">
                                         <p>Add to bag</p>
@@ -440,7 +454,7 @@
                             </a>
                             <div class="product-details">
                                 <p class="product-label">Yellow lines baord</p>
-                                <p class="product-price">$44.95</p>       
+                                <p class="product-price">$44.95</p>
                             </div>
                         </div>
                     </div>
@@ -448,16 +462,25 @@
                 <div class="bottom-pagination-wrapper">
                     <div>
                         <ul class="product-pagination">
-                            <a ><li><span class="pagination-arrow disabled material-icons-round">navigate_before</span></li></a>
-                            <li><p>1 / 48</p></li>
-                            <a href="#"><li><span class="pagination-arrow material-icons-round">navigate_next</span></li></a>
+                            <a>
+                                <li><span class="pagination-arrow disabled material-icons-round">navigate_before</span>
+                                </li>
+                            </a>
+                            <li>
+                                <p>1 / 48</p>
+                            </li>
+                            <a href="#">
+                                <li><span class="pagination-arrow material-icons-round">navigate_next</span></li>
+                            </a>
                         </ul>
                     </div>
                 </div>
                 <div class="truncation-wrapper">
                     <div class="truncation">
                         <h4>Grid Row Truncation</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <a href="#">See More</a>
                     </div>
                 </div>
@@ -468,7 +491,8 @@
                 <div class="grid wrapper">
                     <div class="footer-email-left">
                         <h4>Get Our Emails</h4>
-                        <p>Lorem ipsum dolor sit amet, magna aliqua. Neque sodales ut etiam sit amet nisl. Fames ac turpis egestas maecenas pharetra convallis!</p>
+                        <p>Lorem ipsum dolor sit amet, magna aliqua. Neque sodales ut etiam sit amet nisl. Fames ac
+                            turpis egestas maecenas pharetra convallis!</p>
                     </div>
                     <div class="footer-email-right">
                         <form>
@@ -485,13 +509,15 @@
                     </div>
                 </div>
                 <div class="wrapper email-signup-disclaimer-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat <a href="#">here</a>, at pulvinar felis blandit. Vestibulum volutpat tellus diam, <a href="#">unsubscribe</a> gravida libero rhoncus ut.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat <a
+                            href="#">here</a>, at pulvinar felis blandit. Vestibulum volutpat tellus diam, <a
+                            href="#">unsubscribe</a> gravida libero rhoncus ut.</p>
                 </div>
             </div>
             <div class="footer-columns-wrapper">
                 <div class="responsive-none wrapper grid">
                     <div class="grid-2 footer-space">
-                        
+
                     </div>
                     <div class="grid-2 footer-list">
                         <h3>Help</h3>
@@ -528,22 +554,26 @@
                         </ul>
                     </div>
                     <div class="grid-2 footer-list lastlist">
-                        <div class="footer-list-wrapper ">  
-                            <h3><a href="#"><span class="footer-list-icon material-icons-outlined">location_on</span>Store Locator</a></h3>
+                        <div class="footer-list-wrapper ">
+                            <h3><a href="#"><span
+                                        class="footer-list-icon material-icons-outlined">location_on</span>Store
+                                    Locator</a></h3>
                         </div>
                         <div class="footer-list-wrapper">
-                            <h3><a href="#"><span class="footer-list-icon material-icons-outlined">email</span>Get Email</a></h3>
+                            <h3><a href="#"><span class="footer-list-icon material-icons-outlined">email</span>Get
+                                    Email</a></h3>
                         </div>
                     </div>
                     <div class="grid-2 footer-space">
-                        
+
                     </div>
-                    
+
                 </div>
                 <div class="responsive-footer-wrapper">
                     <a href="#" class="lastlist">
                         <div class="wrapper footer-list-wrapper">
-                                <h3><span class="footer-list-icon material-icons-outlined">location_on</span>Store Locator</h3>
+                            <h3><span class="footer-list-icon material-icons-outlined">location_on</span>Store Locator
+                            </h3>
                         </div>
                     </a>
                     <a href="#" class="lastlist">
@@ -628,8 +658,9 @@
                             </div>
                         </a>
                     </div>
-                    
-                    <div onclick="toggleExtrasText()" class="wrapper footer-links extra-link-wrapper extra-links-selector">
+
+                    <div onclick="toggleExtrasText()"
+                        class="wrapper footer-links extra-link-wrapper extra-links-selector">
                         <p>Extras</p>
                         <span id="expand-extra">+</span>
                     </div>
@@ -663,10 +694,12 @@
                 </div>
             </div>
             <div class="footer-notes">
-                <p>Personal Project <a href="https://www.linkedin.com/in/david-yoon-937567204/" target="_blank"><img src="linkedin.png"></a></p>
+                <p>Personal Project <a href="https://www.linkedin.com/in/david-yoon-937567204/" target="_blank"><img
+                            src="image/linkedin.png"></a></p>
             </div>
         </div>
     </div>
-<script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
