@@ -211,6 +211,9 @@ ul {
   transition-duration: 0.2s;
   color: gray;
 }
+.nav-button div{
+  display: inline-block;
+}
 .responsive-right-nav {
   display: none;
 }
@@ -428,6 +431,7 @@ ul {
   height: auto;
   width: 100%;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
@@ -638,19 +642,19 @@ ul {
 .responsive-footer-wrapper {
   display: none;
 }
-.footer-notes{
+.footer-notes {
   margin: auto;
   padding: 10px;
 }
-.footer-notes p{
+.footer-notes p {
   justify-content: center;
   display: flex;
 }
-.footer-notes a{
+.footer-notes a {
   margin-left: 5px;
   white-space: nowrap;
 }
-.footer-notes img{
+.footer-notes img {
   width: 25px;
 }
 /* max width 1100 **************************************************************************/
@@ -661,6 +665,9 @@ ul {
   /* Nav ***********************************************************/
   .category {
     display: none;
+  }
+  .shopping-bag a{
+    display: flex;
   }
   .nav-right-wrapper .nav-button {
     display: none;
@@ -858,7 +865,7 @@ ul {
 
 @media screen and (max-width: 800px) {
   .landscape-product img {
-    content: url(landscape-trim.png);
+    content: url(../image/landscape-trim.png);
   }
 }
 /* max width 500 **************************************************************************/
